@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Assessment_2
+namespace Assessment2
 {
 
 
@@ -34,8 +34,27 @@ namespace Assessment_2
             Console.WriteLine(sum);
         }
         // create the static method named RemoveNum(int List, int num)..check list Contains number parameter passed into method. if so remove
-        //Value from the List passed in return void
-        //return (void);
+
+        static void RemoveNum(List<int> list, int num)
+        {
+            if (list.Contains(num))
+            {
+                list.Remove(num);
+            }
+        }
+    }
+    //In this example, the RemoveNum method takes a List<int> named list and an integer named num as parameters.
+    //It checks if the list contains the specified number using the Contains method, and if it does,
+    //it removes the number using the Remove method.The example demonstrates the usage of this method
+    //by removing a specific number from the list and then printing the updated list.
+
+
+
+
+
+
+            //Value from the List passed in return void
+            //return (void);
 
         List<string> AddToList = new List<string>();
         AddToList.Add("grapes");
@@ -43,15 +62,25 @@ namespace Assessment_2
         AddToList.Add("cherries");
         //create static method AddToList() takes in a string into parameter. method should add the strings grapes,oranges,and string
         //parameter to a list of strings  example cherries passed on to parameters.. method will return list grapes,oranges,cherries 
-        static
-
+       
+        public static string AddToList() { return AddToList; }
         //create static method TryMe(int, int,)takes in 2 numbers..method should devide first parameter by the second parameter and return 9
         //if there is a Arithmatic exception if no error return correct result from opperation.
-        static int TryMe(int, int)
+        public static int TryMe(int numerator, int denominator)
         {
-
+            try
+            {
+                int result = numerator / denominator;
+                return result;
+            }
+            catch (ArithmeticException)
+            {
+                return 9;
+            }
         }
-    }
+
+
+    
 
 
 }

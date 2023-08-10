@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\obj\\Release"
   ],
-  "SelectedNode": "\\Assessment2.csproj",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
