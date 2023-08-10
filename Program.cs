@@ -34,6 +34,8 @@ namespace Assessment2
             Console.WriteLine(sum);
         }
         // create the static method named RemoveNum(int List, int num)..check list Contains number parameter passed into method. if so remove
+        //In this example, the RemoveNum method takes a List<int> named list and an integer named num as parameters.
+
 
         static void RemoveNum(List<int> list, int num)
         {
@@ -41,20 +43,16 @@ namespace Assessment2
             {
                 list.Remove(num);
             }
+            //by removing a specific number from the list and then printing the updated list.
+            Console.WriteLine(list);
         }
     }
-    //In this example, the RemoveNum method takes a List<int> named list and an integer named num as parameters.
-    //It checks if the list contains the specified number using the Contains method, and if it does,
-    //it removes the number using the Remove method.The example demonstrates the usage of this method
-    //by removing a specific number from the list and then printing the updated list.
+    
+    
+    
 
-
-
-
-
-
-            //Value from the List passed in return void
-            //return (void);
+    //Value from the List passed in return void
+    //return (void);
 
         List<string> AddToList = new List<string>();
         AddToList.Add("grapes");
